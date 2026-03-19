@@ -11,7 +11,9 @@ research-notes/
 ├── README.md                 # 项目简介
 ├── INDEX.md                  # 本文件（索引）
 ├── papers/                   # 论文资料
-│   ├── daily-candidates.md   # 每日候选论文
+│   ├── daily-candidates/     # 每日候选论文（按日期）
+│   │   ├── 2026-03-19.md
+│   │   └── ...
 │   └── vla-robots/           # VLA论文笔记
 │       ├── literature-log.md
 │       ├── obsidian/         # Obsidian格式笔记
