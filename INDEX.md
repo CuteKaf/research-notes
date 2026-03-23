@@ -80,6 +80,10 @@ research-notes/
 - 类型: 论文精读
 - 内容: DySL-VLA动态跳层、VLANeXt设计准则、Critic-in-the-Loop三系统架构、Feature Control可解释性、InstructVLA指令微调、LiLo-VLA长时程、RL Tokens精确控制
 
+### 2026-03-23 | 研究方向分析 (第8次迭代)
+- 类型: 方向规划
+- 内容: Feature Control突破性发现，可解释性方向优先级提升，CT介入纳入RLT+Critic架构
+
 ---
 
 ## 研究方向摘要
@@ -105,8 +109,10 @@ research-notes/
 - [ ] 阅读MoLe-VLA STAR Router实现
 - [ ] **精读VLANeXt 12条设计准则**
 - [ ] **复现Feature Control实验（OpenVLA特征可观测性）**
+- [ ] **设计Failure Mode诊断方案**
 - [ ] **设计Critic架构（三系统框架）**
 - [ ] **评估RLT穿刺精度任务可行性**
+- [ ] **下载VLA-IT数据集**
 
 ---
 
