@@ -1,6 +1,6 @@
 # 研究笔记索引
 
-> 最后更新: 2026-03-22
+> 最后更新: 2026-03-23
 
 ---
 
@@ -76,6 +76,10 @@ research-notes/
 - 类型: 方向规划
 - 内容: 新增ICLR 2026论文参考，Brain-Cerebellum架构
 
+### 2026-03-23 | 论文深度分析
+- 类型: 论文精读
+- 内容: DySL-VLA动态跳层、VLANeXt设计准则、Critic-in-the-Loop三系统架构、Feature Control可解释性、InstructVLA指令微调、LiLo-VLA长时程、RL Tokens精确控制
+
 ---
 
 ## 研究方向摘要
@@ -99,6 +103,10 @@ research-notes/
 - [ ] 整理AMSim2Real数据收集清单
 - [ ] 阅读π0.5多源数据协同细节
 - [ ] 阅读MoLe-VLA STAR Router实现
+- [ ] **精读VLANeXt 12条设计准则**
+- [ ] **复现Feature Control实验（OpenVLA特征可观测性）**
+- [ ] **设计Critic架构（三系统框架）**
+- [ ] **评估RLT穿刺精度任务可行性**
 
 ---
 
