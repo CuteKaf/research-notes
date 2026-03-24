@@ -107,17 +107,32 @@ research-notes/
 
 ## 待办事项
 
+### 高优先级 (本周)
+- [ ] **下载USCorUNet代码并复现CBCT+超声融合** (CT介入核心)
+- [ ] **复现FASTER延迟测试** (实时性核心突破)
+- [ ] **精读StructVLA两阶段训练** (Brain-Cerebellum架构实现)
+- [ ] **设计CT介入模拟场景** (Isaac Sim环境)
+- [ ] **精读VLANeXt 12条设计准则**
+- [ ] **复现Feature Control实验（OpenVLA特征可观测性）**
+
+### 中优先级
 - [ ] 复现OpenVLA在DROID上的基线性能
 - [ ] 用LeRobot跑100/200/500条数据消融
 - [ ] 整理AMSim2Real数据收集清单
 - [ ] 阅读π0.5多源数据协同细节
 - [ ] 阅读MoLe-VLA STAR Router实现
-- [ ] **精读VLANeXt 12条设计准则**
-- [ ] **复现Feature Control实验（OpenVLA特征可观测性）**
-- [ ] **设计Failure Mode诊断方案**
-- [ ] **设计Critic架构（三系统框架）**
-- [ ] **评估RLT穿刺精度任务可行性**
-- [ ] **下载VLA-IT数据集**
+- [ ] 设计Failure Mode诊断方案
+- [ ] 设计Critic架构（三系统框架）
+- [ ] 评估RLT穿刺精度任务可行性
+- [ ] 下载VLA-IT数据集
+- [ ] 精读DT→WM综述五大组件
+- [ ] 设计AMSim2Real世界模型架构
+- [ ] 评估VLA-Thinker图像思考机制
+
+### 研究方向更新 (2026-03-24)
+- **CT介入机器人**: 融合FASTER实时推理 + CBCT超声融合 + RLT精确控制
+- **Brain-Cerebellum架构**: StructVLA里程碑规划 + FASTER实时执行 + USCorUNet动态监控
+- **数字孪生演进**: DT→WM范式转变，五大组件方法论
 
 ---
 
