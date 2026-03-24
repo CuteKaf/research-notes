@@ -89,50 +89,58 @@ research-notes/
 - 类型: 论文精读
 - 内容: FASTER实时推理、StructVLA结构化规划、VLA-Thinker图像推理、CBCT+超声融合、DT→WM演进综述
 
+### 2026-03-24 | 研究方向分析 (第9次迭代)
+- 类型: 方向规划
+- 内容: ICLR 2026全景分析(164篇VLA投稿)、ICRA 2026 VLA Workshop机会、CT介入升为最高优先级、医疗VLA领域空白发现
+
 ---
 
 ## 研究方向摘要
 
-### 核心方向
-1. **CT介入机器人 + VLA** - 首个医疗场景VLA应用
-2. **数字孪生 + VLA** - 虚实融合训练框架
-3. **小数据VLA微调** - 100-200条数据方法论
+### 核心方向（优先级更新）
+1. **CT介入机器人 + VLA** ⭐⭐⭐⭐⭐ - 首个医疗场景VLA应用，ICLR 2026无竞品
+2. **可解释VLA决策框架** ⭐⭐⭐⭐⭐ - Failure Mode诊断 + 安全约束
+3. **数字孪生 + VLA** ⭐⭐⭐⭐ - 虚实融合训练框架
+4. **Brain-Cerebellum架构** ⭐⭐⭐⭐ - StructVLA + FASTER实现
 
 ### 技术栈
 - 模型: OpenVLA / π0 (OpenPI)
-- 数据: LeRobot / AMSim2Real
+- 数据: LeRobot / AMSim2Real / VLA-IT (650K)
 - 平台: Isaac Sim / 真机LeRobot
+- 新增: USCorUNet (CBCT+超声融合) / FASTER (实时推理)
 
 ---
 
 ## 待办事项
 
-### 高优先级 (本周)
-- [ ] **下载USCorUNet代码并复现CBCT+超声融合** (CT介入核心)
-- [ ] **复现FASTER延迟测试** (实时性核心突破)
-- [ ] **精读StructVLA两阶段训练** (Brain-Cerebellum架构实现)
+### 🔴 最高优先级 (本周)
+- [ ] **下载USCorUNet代码并复现CBCT+超声融合** (CT介入核心) - 代码: github.com/anonymous-codebase/us-cbct-demo
+- [ ] **复现FASTER延迟测试** (实时性核心突破) - 项目: innovator-zero.github.io/FASTER
 - [ ] **设计CT介入模拟场景** (Isaac Sim环境)
+
+### 🔴 高优先级
+- [ ] **精读StructVLA两阶段训练** (Brain-Cerebellum架构实现)
 - [ ] **精读VLANeXt 12条设计准则**
 - [ ] **复现Feature Control实验（OpenVLA特征可观测性）**
+- [ ] **评估ICRA 2026 VLA Workshop参与可行性** (截止: 4月15日)
 
-### 中优先级
+### 🟡 中优先级
 - [ ] 复现OpenVLA在DROID上的基线性能
 - [ ] 用LeRobot跑100/200/500条数据消融
 - [ ] 整理AMSim2Real数据收集清单
 - [ ] 阅读π0.5多源数据协同细节
-- [ ] 阅读MoLe-VLA STAR Router实现
 - [ ] 设计Failure Mode诊断方案
 - [ ] 设计Critic架构（三系统框架）
 - [ ] 评估RLT穿刺精度任务可行性
-- [ ] 下载VLA-IT数据集
+- [ ] 下载VLA-IT数据集 (650K)
 - [ ] 精读DT→WM综述五大组件
 - [ ] 设计AMSim2Real世界模型架构
-- [ ] 评估VLA-Thinker图像思考机制
 
-### 研究方向更新 (2026-03-24)
-- **CT介入机器人**: 融合FASTER实时推理 + CBCT超声融合 + RLT精确控制
-- **Brain-Cerebellum架构**: StructVLA里程碑规划 + FASTER实时执行 + USCorUNet动态监控
-- **数字孪生演进**: DT→WM范式转变，五大组件方法论
+### 研究方向更新 (2026-03-24 下午)
+- **战略转变**: 从"跟随热点"转向"填补空白"，医疗VLA领域完全空白
+- **CT介入机器人**: 升为最高优先级，融合FASTER + USCorUNet + RLT + StructVLA完整技术栈
+- **ICRA 2026**: VLA Workshop提供真实机器人评估平台，10,000+小时数据
+- **ICLR 2026**: 164篇VLA投稿增长18倍，LIBERO已饱和(>95%)，离散扩散VLAs竞争激烈
 
 ---
 
