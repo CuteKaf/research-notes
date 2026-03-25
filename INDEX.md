@@ -98,6 +98,10 @@ research-notes/
 - 类型: 论文精读 + 产业动态
 - 内容: GSMem(3DGS空间记忆)、Sim2Real生成式3D世界、Motion-MLLM自我运动感知、VITA零样本价值函数、Safe RL GP可证明安全、Complementary RL经验协同进化、NVIDIA GTC 2026重大发布(GROOT N2 World Action Model、Isaac Lab 3.0+Newton 1.0、Cosmos 3物理世界生成、IGX Thor医疗边缘计算)
 
+### 2026-03-25 | 研究方向分析 (第10次迭代)
+- 类型: 方向规划
+- 内容: CT介入升为最高优先级，完整技术栈(感知→决策→执行→安全)，可执行路线图(W1-W12)
+
 ---
 
 ## 研究方向摘要
@@ -145,7 +149,7 @@ research-notes/
 - [ ] 精读DT→WM综述五大组件
 - [ ] 设计AMSim2Real世界模型架构
 
-### 研究方向更新 (2026-03-25)
+### 研究方向更新 (2026-03-25 下午)
 - **GSMem**: 3DGS作为持久空间记忆，后验可重观察性突破，对CT介入场景重建有直接价值
 - **生成式3D世界**: 场景多样性 > 样本数量，Sim2Real成功率从9.7%→79.8%，完美匹配AMSim2Real
 - **Motion-MLLM**: IMU作为新模态，低成本实现3D场景理解，与GSMem形成互补
@@ -156,7 +160,7 @@ research-notes/
 - **IGX Thor**: 医疗机器人边缘计算平台成熟，J&J和Medtronic已采用，CT介入硬件平台标准
 - **Cosmos 3**: 物理世界生成模型，解决机器人数据稀缺问题，与生成式3D世界方法高度互补
 - **战略转变**: 从"跟随热点"转向"填补空白"，医疗VLA领域完全空白
-- **CT介入机器人**: 升为最高优先级，融合FASTER + USCorUNet + GSMem + VITA + Safe RL GP完整技术栈
+- **CT介入机器人**: 最高优先级，完整技术栈(感知→决策→执行→安全)，可执行路线图(W1-W12)
 - **ICRA 2026**: VLA Workshop提供真实机器人评估平台，10,000+小时数据
 - **ICLR 2026**: 164篇VLA投稿增长18倍，LIBERO已饱和(>95%)，离散扩散VLAs竞争激烈
 
