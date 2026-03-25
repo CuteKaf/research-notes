@@ -1,6 +1,6 @@
 # 研究笔记索引
 
-> 最后更新: 2026-03-24
+> 最后更新: 2026-03-25
 
 ---
 
@@ -15,6 +15,7 @@ research-notes/
 │   │   ├── 2026-03-19.md
 │   │   ├── 2026-03-20.md
 │   │   ├── 2026-03-24.md
+│   │   ├── 2026-03-25.md
 │   │   └── ...
 │   └── vla-robots/           # VLA论文笔记
 │       ├── literature-log.md
@@ -93,6 +94,10 @@ research-notes/
 - 类型: 方向规划
 - 内容: ICLR 2026全景分析(164篇VLA投稿)、ICRA 2026 VLA Workshop机会、CT介入升为最高优先级、医疗VLA领域空白发现
 
+### 2026-03-25 | 论文深度分析 + GTC 2026
+- 类型: 论文精读 + 产业动态
+- 内容: GSMem(3DGS空间记忆)、Sim2Real生成式3D世界、Motion-MLLM自我运动感知、VITA零样本价值函数、NVIDIA GTC 2026重大发布(GROOT N2、Isaac Lab 3.0、Newton 1.0、Cosmos 3、IGX Thor医疗应用)
+
 ---
 
 ## 研究方向摘要
@@ -104,10 +109,10 @@ research-notes/
 4. **Brain-Cerebellum架构** ⭐⭐⭐⭐ - StructVLA + FASTER实现
 
 ### 技术栈
-- 模型: OpenVLA / π0 (OpenPI)
-- 数据: LeRobot / AMSim2Real / VLA-IT (650K)
-- 平台: Isaac Sim / 真机LeRobot
-- 新增: USCorUNet (CBCT+超声融合) / FASTER (实时推理)
+- 模型: OpenVLA / π0 (OpenPI) / **GR00T N2 (待发)**
+- 数据: LeRobot / AMSim2Real / VLA-IT (650K) / **Cosmos 3合成数据**
+- 平台: Isaac Sim / **Isaac Lab 3.0** / **Newton 1.0** / 真机LeRobot
+- 新增: USCorUNet (CBCT+超声融合) / FASTER (实时推理) / **GSMem (3DGS空间记忆)** / **IGX Thor (边缘计算)**
 
 ---
 
@@ -117,6 +122,8 @@ research-notes/
 - [ ] **下载USCorUNet代码并复现CBCT+超声融合** (CT介入核心) - 代码: github.com/anonymous-codebase/us-cbct-demo
 - [ ] **复现FASTER延迟测试** (实时性核心突破) - 项目: innovator-zero.github.io/FASTER
 - [ ] **设计CT介入模拟场景** (Isaac Sim环境)
+- [ ] **安装Isaac Lab 3.0 + Newton 1.0** (GTC 2026新发布)
+- [ ] **复现GSMem** (3DGS空间记忆对数字孪生+CT介入有直接价值) - 项目: vulab-ai.github.io/GSMem/
 
 ### 🔴 高优先级
 - [ ] **精读StructVLA两阶段训练** (Brain-Cerebellum架构实现)
@@ -136,7 +143,12 @@ research-notes/
 - [ ] 精读DT→WM综述五大组件
 - [ ] 设计AMSim2Real世界模型架构
 
-### 研究方向更新 (2026-03-24 下午)
+### 研究方向更新 (2026-03-25)
+- **GTC 2026**: NVIDIA全面押注Physical AI，从数据问题转向计算问题，GR00T N2 World Action Model架构值得关注
+- **IGX Thor**: 医疗机器人边缘计算平台成熟，J&J和Medtronic已采用
+- **GSMem**: 3DGS作为空间记忆，对CT介入场景重建有直接应用价值
+- **Sim2Real**: 生成式3D世界+领域随机化成为主流，arXiv:2603.18532展示完整pipeline
+- **Safe RL**: GP屏蔽框架提供可证明安全边界，对CT介入安全约束关键
 - **战略转变**: 从"跟随热点"转向"填补空白"，医疗VLA领域完全空白
 - **CT介入机器人**: 升为最高优先级，融合FASTER + USCorUNet + RLT + StructVLA完整技术栈
 - **ICRA 2026**: VLA Workshop提供真实机器人评估平台，10,000+小时数据
