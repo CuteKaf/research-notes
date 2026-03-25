@@ -96,7 +96,7 @@ research-notes/
 
 ### 2026-03-25 | 论文深度分析 + GTC 2026
 - 类型: 论文精读 + 产业动态
-- 内容: GSMem(3DGS空间记忆)、Sim2Real生成式3D世界、Motion-MLLM自我运动感知、VITA零样本价值函数、NVIDIA GTC 2026重大发布(GROOT N2、Isaac Lab 3.0、Newton 1.0、Cosmos 3、IGX Thor医疗应用)
+- 内容: GSMem(3DGS空间记忆)、Sim2Real生成式3D世界、Motion-MLLM自我运动感知、VITA零样本价值函数、Safe RL GP可证明安全、Complementary RL经验协同进化、NVIDIA GTC 2026重大发布(GROOT N2 World Action Model、Isaac Lab 3.0+Newton 1.0、Cosmos 3物理世界生成、IGX Thor医疗边缘计算)
 
 ---
 
@@ -109,21 +109,23 @@ research-notes/
 4. **Brain-Cerebellum架构** ⭐⭐⭐⭐ - StructVLA + FASTER实现
 
 ### 技术栈
-- 模型: OpenVLA / π0 (OpenPI) / **GR00T N2 (待发)**
-- 数据: LeRobot / AMSim2Real / VLA-IT (650K) / **Cosmos 3合成数据**
+- 模型: OpenVLA / π0 (OpenPI) / **GR00T N1.7** / **GR00T N2 (待发)**
+- 数据: LeRobot / AMSim2Real / VLA-IT (650K) / **Cosmos 3合成数据** / **生成式3D世界**
 - 平台: Isaac Sim / **Isaac Lab 3.0** / **Newton 1.0** / 真机LeRobot
-- 新增: USCorUNet (CBCT+超声融合) / FASTER (实时推理) / **GSMem (3DGS空间记忆)** / **IGX Thor (边缘计算)**
+- 空间表示: **GSMem (3DGS空间记忆)**
+- 传感融合: **Motion-MLLM (IMU+视觉)**
+- 新增: USCorUNet (CBCT+超声融合) / FASTER (实时推理) / **VITA (零样本价值函数)** / **Safe RL GP (可证明安全)** / **IGX Thor (边缘计算)**
 
 ---
 
 ## 待办事项
 
 ### 🔴 最高优先级 (本周)
+- [ ] **安装Isaac Lab 3.0 + Newton 1.0** (GTC 2026新发布，仿真基础设施升级)
+- [ ] **复现GSMem** (3DGS空间记忆对数字孪生+CT介入有直接价值) - 项目: vulab-ai.github.io/GSMem/
 - [ ] **下载USCorUNet代码并复现CBCT+超声融合** (CT介入核心) - 代码: github.com/anonymous-codebase/us-cbct-demo
 - [ ] **复现FASTER延迟测试** (实时性核心突破) - 项目: innovator-zero.github.io/FASTER
-- [ ] **设计CT介入模拟场景** (Isaac Sim环境)
-- [ ] **安装Isaac Lab 3.0 + Newton 1.0** (GTC 2026新发布)
-- [ ] **复现GSMem** (3DGS空间记忆对数字孪生+CT介入有直接价值) - 项目: vulab-ai.github.io/GSMem/
+- [ ] **跟踪GR00T N2发布** (World Action Model架构值得关注)
 
 ### 🔴 高优先级
 - [ ] **精读StructVLA两阶段训练** (Brain-Cerebellum架构实现)
@@ -144,13 +146,17 @@ research-notes/
 - [ ] 设计AMSim2Real世界模型架构
 
 ### 研究方向更新 (2026-03-25)
+- **GSMem**: 3DGS作为持久空间记忆，后验可重观察性突破，对CT介入场景重建有直接价值
+- **生成式3D世界**: 场景多样性 > 样本数量，Sim2Real成功率从9.7%→79.8%，完美匹配AMSim2Real
+- **Motion-MLLM**: IMU作为新模态，低成本实现3D场景理解，与GSMem形成互补
+- **VITA**: VLM零样本价值函数，Brain层任务进度监控，test-time adaptation动态适应
+- **Safe RL GP**: 可证明安全边界，CT介入安全约束核心技术
+- **Complementary RL**: 经验提取器+策略执行器协同进化，解决静态经验存储问题
 - **GTC 2026**: NVIDIA全面押注Physical AI，从数据问题转向计算问题，GR00T N2 World Action Model架构值得关注
-- **IGX Thor**: 医疗机器人边缘计算平台成熟，J&J和Medtronic已采用
-- **GSMem**: 3DGS作为空间记忆，对CT介入场景重建有直接应用价值
-- **Sim2Real**: 生成式3D世界+领域随机化成为主流，arXiv:2603.18532展示完整pipeline
-- **Safe RL**: GP屏蔽框架提供可证明安全边界，对CT介入安全约束关键
+- **IGX Thor**: 医疗机器人边缘计算平台成熟，J&J和Medtronic已采用，CT介入硬件平台标准
+- **Cosmos 3**: 物理世界生成模型，解决机器人数据稀缺问题，与生成式3D世界方法高度互补
 - **战略转变**: 从"跟随热点"转向"填补空白"，医疗VLA领域完全空白
-- **CT介入机器人**: 升为最高优先级，融合FASTER + USCorUNet + RLT + StructVLA完整技术栈
+- **CT介入机器人**: 升为最高优先级，融合FASTER + USCorUNet + GSMem + VITA + Safe RL GP完整技术栈
 - **ICRA 2026**: VLA Workshop提供真实机器人评估平台，10,000+小时数据
 - **ICLR 2026**: 164篇VLA投稿增长18倍，LIBERO已饱和(>95%)，离散扩散VLAs竞争激烈
 
