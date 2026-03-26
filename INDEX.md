@@ -1,6 +1,6 @@
 # 研究笔记索引
 
-> 最后更新: 2026-03-25
+> 最后更新: 2026-03-26
 
 ---
 
@@ -16,6 +16,7 @@ research-notes/
 │   │   ├── 2026-03-20.md
 │   │   ├── 2026-03-24.md
 │   │   ├── 2026-03-25.md
+│   │   ├── 2026-03-26.md
 │   │   └── ...
 │   └── vla-robots/           # VLA论文笔记
 │       ├── literature-log.md
@@ -101,6 +102,10 @@ research-notes/
 ### 2026-03-25 | 研究方向分析 (第10次迭代)
 - 类型: 方向规划
 - 内容: CT介入升为最高优先级，完整技术栈(感知→决策→执行→安全)，可执行路线图(W1-W12)
+
+### 2026-03-26 | 每日论文候选
+- 类型: 候选检索
+- 内容: TwinRL-VLA数字孪生协同RL、Simulation Distillation世界模型蒸馏、Interactive World Simulator交互式仿真器、PlayWorld自玩世界模型、DAM-VLA动态动作专家、AR-VLA自回归动作专家、LiteVLA-Edge边缘部署、Kinema4D四维世界建模
 
 ---
 
