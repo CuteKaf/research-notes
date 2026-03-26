@@ -28,7 +28,8 @@ research-notes/
     ├── 2026-03-16-user-study.md
     ├── 2026-03-17-paper-analysis.md
     ├── 2026-03-18-vla-trends.md
-    └── 2026-03-19-research-directions-v2.md
+    ├── 2026-03-19-research-directions-v2.md
+    └── 2026-03-26-paper-analysis.md
 ```
 
 ---
@@ -102,6 +103,10 @@ research-notes/
 ### 2026-03-25 | 研究方向分析 (第10次迭代)
 - 类型: 方向规划
 - 内容: CT介入升为最高优先级，完整技术栈(感知→决策→执行→安全)，可执行路线图(W1-W12)
+
+### 2026-03-26 | 论文深度分析
+- 类型: 论文精读
+- 内容: TwinRL-VLA数字孪生协同RL、Simulation Distillation仿真蒸馏、Interactive World Simulator交互式世界模拟器、DAM-VLA动态动作专家、AR-VLA自回归动作专家；核心结论是 digital twin 正在成为探索引擎、world model 正在成为研究基础设施、VLA 控制正在走向模块化
 
 ### 2026-03-26 | 每日论文候选
 - 类型: 候选检索
