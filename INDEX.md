@@ -1,6 +1,6 @@
 # 研究笔记索引
 
-> 最后更新: 2026-03-26
+> 最后更新: 2026-03-27
 
 ---
 
@@ -17,6 +17,7 @@ research-notes/
 │   │   ├── 2026-03-24.md
 │   │   ├── 2026-03-25.md
 │   │   ├── 2026-03-26.md
+│   │   ├── 2026-03-27.md
 │   │   └── ...
 │   └── vla-robots/           # VLA论文笔记
 │       ├── literature-log.md
@@ -99,6 +100,14 @@ research-notes/
 ### 2026-03-25 | 论文深度分析 + GTC 2026
 - 类型: 论文精读 + 产业动态
 - 内容: GSMem(3DGS空间记忆)、Sim2Real生成式3D世界、Motion-MLLM自我运动感知、VITA零样本价值函数、Safe RL GP可证明安全、Complementary RL经验协同进化、NVIDIA GTC 2026重大发布(GROOT N2 World Action Model、Isaac Lab 3.0+Newton 1.0、Cosmos 3物理世界生成、IGX Thor医疗边缘计算)
+
+### 2026-03-26 | 论文深度分析
+- 类型: 论文精读
+- 内容: TwinRL-VLA数字孪生协同RL、Simulation Distillation仿真蒸馏、Interactive World Simulator交互式世界模拟器、DAM-VLA动态动作专家、AR-VLA自回归动作专家；核心结论是 digital twin 正在成为探索引擎、world model 正在成为研究基础设施、VLA 控制正在走向模块化
+
+### 2026-03-27 | 论文深度分析
+- 类型: 论文精读
+- 内容: Merlin(首个CT领域VLM基础模型)、MS-HGNN(E(3)等变GNN+形态对称性)、Gaze-Regularized VLA(注视引导注意力)、VLA综述(80+模型系统梳理)；关键发现：CT影像领域正在复制VLA成功路径，Gaze-VLA为共享控制提供新思路
 
 ### 2026-03-25 | 研究方向分析 (第10次迭代)
 - 类型: 方向规划
